@@ -1,0 +1,19 @@
+.wpcf7 form.invalid .wpcf7-response-output, 
+.wpcf7 form.unaccepted .wpcf7-response-output {
+	border: 0;
+	color: #FF1A50;
+	text-align: center;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+	border: 0;
+	color: #46b450;
+	text-align: center;
+}
+span.wpcf7-spinner {
+    /*position: absolute;
+    bottom: 20px;*/
+    display:none;
+}
+.wpcf7-not-valid-tip {
+    position: absolute;
+}
