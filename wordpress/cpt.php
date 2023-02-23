@@ -7,26 +7,26 @@ function custom_post_type() {
   
 	// Set UI labels for Custom Post Type
 		$labels = array(
-			'name'                => _x( 'Special Moments', 'Post Type General Name', 'cyc' ),
-			'singular_name'       => _x( 'Special Moment', 'Post Type Singular Name', 'cyc' ),
-			'menu_name'           => __( 'Special Moments', 'cyc' ),
-			'parent_item_colon'   => __( 'Parent Special Moments', 'cyc' ),
-			'all_items'           => __( 'All Special Moments', 'cyc' ),
-			'view_item'           => __( 'View Special Moments', 'cyc' ),
-			'add_new_item'        => __( 'Add New Special Moments', 'cyc' ),
-			'add_new'             => __( 'Add New', 'cyc' ),
-			'edit_item'           => __( 'Edit Special Moments', 'cyc' ),
-			'update_item'         => __( 'Update Special Moments', 'cyc' ),
-			'search_items'        => __( 'Search Special Moments', 'cyc' ),
-			'not_found'           => __( 'Not Found', 'cyc' ),
-			'not_found_in_trash'  => __( 'Not found in Trash', 'cyc' ),
+			'name'                => _x( 'Special Moments', 'Post Type General Name', 'custom theme' ),
+			'singular_name'       => _x( 'Special Moment', 'Post Type Singular Name', 'custom theme' ),
+			'menu_name'           => __( 'Special Moments', 'custom theme' ),
+			'parent_item_colon'   => __( 'Parent Special Moments', 'custom theme' ),
+			'all_items'           => __( 'All Special Moments', 'custom theme' ),
+			'view_item'           => __( 'View Special Moments', 'custom theme' ),
+			'add_new_item'        => __( 'Add New Special Moments', 'custom theme' ),
+			'add_new'             => __( 'Add New', 'custom theme' ),
+			'edit_item'           => __( 'Edit Special Moments', 'custom theme' ),
+			'update_item'         => __( 'Update Special Moments', 'custom theme' ),
+			'search_items'        => __( 'Search Special Moments', 'custom theme' ),
+			'not_found'           => __( 'Not Found', 'custom theme' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'custom theme' ),
 		);
 		  
 	// Set other options for Custom Post Type
 		  
 		$args = array(
-			'label'               => __( 'Special Moment', 'cyc' ),
-			'description'         => __( 'Special Moment news and reviews', 'cyc' ),
+			'label'               => __( 'Special Moment', 'custom theme' ),
+			'description'         => __( 'Special Moment news and reviews', 'custom theme' ),
 			'labels'              => $labels,
 			// Features this CPT supports in Post Editor
 			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
