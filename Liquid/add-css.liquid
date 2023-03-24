@@ -1,0 +1,16 @@
+in theme.liquid
+
+after onLoadStylesheet function
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+  {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+     {{ 'aos.css' | asset_url | stylesheet_tag }}
+     {{ 'slick.css' | asset_url | stylesheet_tag }}
+      {{ 'fonts.css' | asset_url | stylesheet_tag }}
+       {{ 'custom.css' | asset_url | stylesheet_tag }}
+       {{ 'developer.css' | asset_url | stylesheet_tag }}
+       {{ 'responsive.css' | asset_url | stylesheet_tag }}
+
+
+       note : add all css file to assets

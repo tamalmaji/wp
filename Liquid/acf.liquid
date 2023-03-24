@@ -1,0 +1,76 @@
+for text
+{
+    "type": "text",
+    "id": "processhead",
+    "label": "Process Heading"
+},
+fetch text value {{section.settings.bannerheading}}
+for image
+{
+    "id": "mouseimage",
+    "type": "image_picker",
+    "label": "Banner Mouse Image"
+}
+fetch image {{ section.settings.mobbannerimage | img_url: 'master' }}
+
+for text area
+{
+    "id": "abouttext",
+    "type": "textarea",
+    "label": "About Text"
+},
+
+
+for repeter
+
+{
+    "name": "Home Process section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "processhead",
+            "label": "Process Heading"
+               
+        },
+        {
+            "type": "text",
+            "id": "processheads",
+            "label": "Process Headings"
+        }
+    ],
+    "blocks":[
+        {
+          "type": "block",
+          "name": "Block items",
+          "settings": [
+                {
+                "type": "image_picker",
+                "id": "proimage",
+                "label": "Process Image"
+                },
+                {
+                "type": "textarea",
+                "id": "processdescription",
+                "label": "Process Description"
+                }
+            ]
+        }
+    ],
+
+    "presets": [
+        {
+            "name": "Home Process",
+            "category": "ADVANCED LAYOUT"
+        }
+    ]
+}
+
+fetch repeter
+
+{% for block in section.blocks %}
+    {% if block.type == 'block' %}
+    {% endif %}
+{% endfor %}
+
+fetch repeter value using {{block.settings.processdescription}}
+fetch repeter image using {{ block.settings.image | img_url: 'master' }}
